@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B9A3 Assignment</title>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/6c13a282a2.js" crossorigin="anonymous"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- tailwind custom -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'bg-color': '#FF4240',
+                'text-color': '#13131899',
+              }
+            }
+          }
+        }
+      </script>
+
+    <!-- css style -->
+    <style>
+        .manrope-font{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+<body class="manrope-font">
+    <header class="container mx-auto lg:mt-12 mt-3 p-5">
+        <nav class="flex items-center justify-between">
+            <div class="dropdown lg:hidden">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="dropdown-content mt-3 z-[1] p-2 shadow-xl bg-base-100 rounded-box w-32">
+                    <li class="px-3 rounded-md hover:bg-bg-color hover:text-white"><a href="#">Home</a></li>
+                    <li class="px-3 rounded-md hover:bg-bg-color hover:text-white"><a href="#">About</a></li>
+                    <li class="px-3 rounded-md hover:bg-bg-color hover:text-white"><a href="#">Pages</a></li>
+                    <li class="px-3 rounded-md hover:bg-bg-color hover:text-white"><a href="#">Blog</a></li>
+                    <li class="px-3 rounded-md hover:bg-bg-color hover:text-white"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h1 class="text-2xl lg:text-4xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</h1>
+            </div>
+            <div>
+                <ul class="lg:flex items-center justify-center gap-11 hidden">
+                    <li class="text-[#FF4240]"><a href="#">Home</a></li>
+                    <li class="hover:text-[#FF4240]"><a href="#">About</a></li>
+                    <li class="hover:text-[#FF4240]"><a href="#">Pages</a></li>
+                    <li class="hover:text-[#FF4240]"><a href="#">Blog</a></li>
+                    <li class="hover:text-[#FF4240]"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center justify-center gap-6">
+                <div class="text-2xl hidden lg:block text-gray-600">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <button class="btn lg:py-4 lg:px-6 py-1 px-4 bg-bg-color text-white">
+                    Get Ticket
+                </button>
+            </div>
+        </nav>
+
+        <div>
+            <div class="carousel w-full lg:mt-12 mt-8 rounded-2xl">
+                <div id="slide1" class="carousel-item relative w-full lg:h-[650px] h-[200px] rounded-2xl bg-[url('./Images/1.png')] bg-no-repeat bg-cover bg-center overflow-hidden">
+                    <div class="absolute flex gap-8 items-center justify-center transform -translate-x-1/2 -translate-y-1/2 lg:left-[10%] lg:top-[90%] left-1/2 top-3/4">
+                        <a href="#slide2" class="btn btn-circle bg-black text-white hover:bg-bg-color">❮</a> 
+                        <a href="#slide2" class="btn btn-circle bg-black text-white hover:bg-bg-color">❯</a>
+                    </div>
+                    <div class="hidden lg:block absolute bottom-8 right-8 p-8 w-[500px] h-36 rounded-2xl bg-zinc-900">
+                        <h2 class="font-extrabold text-2xl text-white">
+                            Meet all the heroes from the field`
+                        </h2>
+                        <p class="text-[#ffffff99] text-base font-medium">
+                            Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. 
+                        </p>
+                    </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full lg:h-[650px] h-[200px] rounded-2xl bg-[url('./Images/1.png')] bg-no-repeat bg-cover bg-center overflow-hidden">
+                    <div class="absolute flex gap-8 items-center justify-center transform -translate-x-1/2 -translate-y-1/2 lg:left-[10%] lg:top-[90%] left-1/2 top-3/4">
+                        <a href="#slide1" class="btn btn-circle bg-black text-white hover:bg-bg-color">❮</a> 
+                        <a href="#slide1" class="btn btn-circle bg-black text-white hover:bg-bg-color">❯</a>
+                    </div>
+                    <div class="hidden lg:block absolute bottom-8 right-8 p-8 w-[500px] h-36 rounded-2xl bg-zinc-900">
+                        <h2 class="font-extrabold text-2xl text-white">
+                            Meet all the heroes from the field`
+                        </h2>
+                        <p class="text-[#ffffff99] text-base font-medium">
+                            Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. 
+                        </p>
+                    </div>
+                </div> 
+            </div>
+            <div class="rounded-xl bg-zinc-900 p-3 lg:hidden mt-4">
+                <h2 class="font-extrabold text-base text-white">
+                    Meet all the heroes from the field`
+                </h2>
+                <p class="text-[#ffffff99] text-xs font-medium mt-2">
+                    Dit amet consectetur. Condimentum <br> dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. 
+                </p>
+            </div>
+        </div>
+    </header>
+
+    
+</body>
+</html>
